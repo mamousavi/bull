@@ -389,6 +389,16 @@ declare namespace Bull {
      * Number of times the job should repeat at max.
      */
     limit?: number | undefined;
+    
+    /**
+     * The start value for the repeat iteration count.
+     */
+    count?: number | undefined;
+    
+    /**
+     * The key for the repeatable job metadata in Redis.
+     */
+    key?: string | undefined;
   }
 
   interface CronRepeatOptions extends RepeatOptions {
